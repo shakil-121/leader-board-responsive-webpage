@@ -1,0 +1,119 @@
+/* common style  */ 
+*{
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box; 
+    font-family: 'Poppins', sans-serif;
+}  
+body{ 
+    background-color: #E5E5E5;
+} 
+
+:root{ 
+    --pink:#ff0256;
+}
+/*------------------------------
+header section style 
+-------------------------- */ 
+.navbar{ 
+    background-color:#ff0256; 
+    color: #ffff; 
+    display: flex; 
+    justify-content: space-between; 
+    padding: 5px 289px;
+}  
+.logo{ 
+    display: flex; 
+    align-items: center;  
+    
+}
+.logo-sign{ 
+    font-size: 48px; 
+    padding-right: 5px;
+}
+.user-pic{ 
+    height: 51px; 
+    width: 51px;
+} 
+.manu ul{ 
+    display: flex;  
+    list-style: none; 
+    align-items: center; 
+    justify-content: space-evenly;
+} 
+.manu ul li{
+   padding: 0px 10px;
+} 
+
+/*---------
+ header responsive section 
+ ------------------------*/  
+ /* for phone  */
+ @media screen and (max-width:360px) {
+    .navbar{ 
+        background-color: #562EFF;
+        color: #ffff; 
+        display: block; 
+        padding: 16px 11px;
+    }
+ } 
+
+
+ /* for tab (ipad) */ 
+ @media screen and (min-width:366px) and (max-width:768px) {
+    .navbar{ 
+        padding: 5px 25px;
+    }
+ } 
+
+ /* section one style  */  
+ .top-palyer{ 
+    margin: 36px 285px; 
+    padding: 33px; 
+    background-color: #fff; 
+    border-radius: 10px;
+ } 
+ .top-palyer h1{ 
+    color: var(--pink); 
+    margin-bottom: 40px;
+ }
+ .players{ 
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-around; 
+    grid-row-gap: 40px;
+ }
+ .profile-one img{ 
+    height: 56px; 
+    width: 56px;
+    margin-right: 16px;
+ } 
+ .profile-one{ 
+    display: flex; 
+    align-items: center; 
+    font-weight: 500; 
+    
+ } 
+ .line{ 
+    margin: 40px 0px ;
+ } 
+.blogs{ 
+    display: grid; 
+    grid-template-columns: repeat(2, 1fr);
+} 
+.blog{ 
+    display: flex; 
+    margin: 20px 0;
+  
+}
+ .blog img{ 
+    height: 117px; 
+    width: 177px; 
+    margin-right: 10px;
+ } 
+ .blog h2{ 
+    font-size: 15px;
+ } 
+ .blog a{ 
+    text-decoration: none;
+ }
