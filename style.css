@@ -11,6 +11,9 @@ body{
 
 :root{ 
     --pink:#ff0256;
+} 
+.hide{ 
+    display: none;
 }
 /*------------------------------
 header section style 
@@ -66,7 +69,9 @@ header section style
     }
  } 
 
- /* section one style  */  
+ /* ------------
+ section one style
+ -------------------- */  
  .top-palyer{ 
     margin: 36px 285px; 
     padding: 33px; 
@@ -116,4 +121,108 @@ header section style
  } 
  .blog a{ 
     text-decoration: none;
+ }   
+
+ /*----------------================
+  section one responsive style
+  -----------=========================== */
+  /* for phone  */ 
+  @media screen and (max-width:360px){
+    .top-palyer{
+        margin: 0px; 
+        padding: 20px; 
+    } 
+    .players{ 
+        grid-template-columns: repeat(1,1fr);
+    } 
+    .blogs{ 
+        grid-template-columns: repeat(1,1fr);
+    }
+  }
+
+ /* -----------
+ section two style 
+ ----------------- */ 
+ .latest-courses{ 
+    margin: 36px 285px; 
+    padding: 33px; 
+    background-color: #fff; 
+    border-radius: 10px; 
+    height: 750px;
+
+ }  
+ .courses{ 
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-items: center;
+    grid-row-gap: 20px;
  }
+ .latest-courses h1{ 
+  margin-bottom: 20px; 
+  color: var(--pink);
+ }
+.course-header img{ 
+    height: 104px; 
+    width:100% ;
+} 
+.course-title{  
+    font-size: 15px;
+}   
+.course-header p{  
+    margin: 20px 0px;
+    color: red;
+} 
+.rate{ 
+    display: flex; 
+    align-items: center;
+}
+.fa-star { 
+    color: #FFC014; 
+    font-size: 13px;
+} 
+.fa-star.null{
+    color: gray;
+}
+.length{ 
+    height: 26px;
+    width: 69px;
+    background-color: #e6b0a2;
+    color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    font-size: 12px;
+}  
+.course{ 
+    height: 290px;
+    width: 96%;
+    background-color: rgb(255 255 255);
+    padding: 18px 14px;
+    /* filter: drop-shadow(0px 5.34229px 13.3557px rgba(0, 0, 0, 0.05)); */
+    box-shadow: 0px 0px 20px 0px #e9dbdb;
+    border-radius: 10px; 
+}
+.course-footer{ 
+    display: flex; 
+    justify-content: space-between; 
+    margin: 20px 0px;
+} 
+
+/* ---------------
+section two responsive 
+-------------------------- */
+/* for phone  */ 
+@media screen and (max-width:360px){ 
+    .latest-courses{ 
+        margin: 10px;
+        padding: 40px 40px;
+        height: 2100px;
+    }
+        
+    } 
+    .courses{ 
+        grid-template-columns: repeat(1,1fr);
+    }
+    
+}
