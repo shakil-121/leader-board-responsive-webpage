@@ -220,7 +220,7 @@ section two responsive
         height: 2100px;
     }
         
-    } 
+
     .courses{ 
         grid-template-columns: repeat(1,1fr);
     }
